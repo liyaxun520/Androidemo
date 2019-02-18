@@ -2,7 +2,6 @@ package com.example.androidemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.example.androidemo.jni.MyJni;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -24,5 +23,8 @@ public class MainActivity extends AppCompatActivity {
         //计算面积
         double rectArea = MyJni.getRectArea(10.0, 20.0);
         Logger.d("矩形面积 {}"+rectArea+"");
+
+        Person person = MyJni.getPerson();
+        Logger.d("获取用户信息  "+person.toString());
     }
 }

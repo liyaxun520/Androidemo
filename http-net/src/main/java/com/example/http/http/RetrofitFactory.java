@@ -88,7 +88,6 @@ public class RetrofitFactory {
         Headers headers = request.headers();
         for (int i = 0, count = headers.size(); i < count; i++) {
             System.out.println(headers.name(i) + ": " + headers.value(i));
-
         }
     }
 

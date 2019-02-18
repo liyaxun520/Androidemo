@@ -40,3 +40,19 @@ Java_com_example_androidemo_jni_MyJni_getRectArea(JNIEnv *env, jclass type, jdou
     return width*height;
 
 }
+extern "C"
+JNIEXPORT jobject JNICALL
+Java_com_example_androidemo_jni_MyJni_getPerson(JNIEnv *env, jclass type) {
+    //获取到person class对象
+    jclass jclass1 = env->FindClass("com/example/androidemo/Person");
+    //获取到构造函数的methodId
+    jmethodID jmethodID1 = env->GetMethodID(jclass1, "<init>", "(ILjava/lang/String;)V");
+
+    jint age = 28;
+    char *name = "lison";
+    jstring  strName = env->NewStringUTF(name);
+    //NewObject，根据class对象返回一个实例对象
+    jobject jobject1 = env->NewObject(jclass1,jmethodID1,age,strName);
+    return jobject1;
+
+}
