@@ -10,4 +10,5 @@ public class MyJni {
     public native static double getRectArea(double width,double height);
 
     public native static Person getPerson();
+
 }
