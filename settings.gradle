@@ -1,1 +1,1 @@
-include ':app', ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck'
+include ':app', ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinner', ':lottie_demo', ':pie_demo'
