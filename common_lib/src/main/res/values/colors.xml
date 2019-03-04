@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic -->
+    <!-- 主色调 -->
+    <color name="colorPrimary">#ffeeeeee</color>
+    <!-- 主题相关颜色 -->
+    <color name="window_background_light">#ffeeeeee</color>
+    <color name="window_background_dark">#ff303030</color>
+    <color name="text_color_light">#b3ffffff</color>
+    <color name="text_color_dark">#de000000</color>
+    <color name="list_divider_light">#ffe0e0e0</color>
+    <color name="list_divider_dark">#ff666666</color>
+    <color name="selectable_item_background_general_light_normal">@android:color/white</color>
+    <color name="selectable_item_background_general_light_pressed">#ffeeeeee</color>
+    <color name="selectable_item_background_general_light_accent">#ffcccccc</color>
+    <color name="selectable_item_background_general_dark_normal">#ff3c3c3c</color>
+    <color name="selectable_item_background_general_dark_pressed">#ff444444</color>
+    <color name="selectable_item_background_general_dark_accent">#ff666666</color>
+    <!-- 主体文字,标题/标签 -->
+    <color name="txt_black">#212121</color>
+    <!-- 内容文字,正文 -->
+    <color name="txt_gray">#808080</color>
+    <!-- 辅助文字,提示 -->
+    <color name="txt_light_gray">#CCCCCC</color>
+    <!-- 背景色 -->
+    <color name="bg_gray">#f1f1f1</color>
+    <!-- 按下灰色 -->
+    <color name="bg_gray_pressed">#e8e8e8</color>
+    <!-- 高亮,红棕色 -->
+    <color name="brown">#d54c1c</color>
+    <!-- 分割线 -->
+    <color name="divider_gray">#cbcbcb</color>
+    <!-- other -->
+    <color name="txt_link_blue">#1ea5ff</color>
+
+    <!-- wheel -->
+    <color name="province_line_border">#C7C7C7</color>
+
+    <!-- drop down menu -->
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+
+    <color name="drop_down_selected">#8BC34A</color>
+    <color name="drop_down_unselected">#808080</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f1f1f1</color>
+    <color name="un_press_color">#8BC34A</color>
+
+    <!-- position bar -->
+    <color name="bg_position_bar_up">#0D8BC34A</color>
+    <color name="bg_position_bar_down">#1A8BC34A</color>
+    <color name="theme_black_7f">#8f000000</color>
+
+    <color name="light_yellow">#FF9500</color>
+    <color name="light_grey">#808080</color>
+    <color name="dark_grey">#333333</color>
+
+    <color name="yellow_translucent">#80FF9500</color>
+
+    <color name="grey_line">#808080</color>
+    <color name="setpoint_temp">#FF9500</color>
+    <color name="indoor_temp">#ffffff</color>
+    <color name="power_time">#4a2317</color>
+    <color name="light_grey2">#AAAAAA</color>
+
+    <color name="shape_count_down_bg">#88000000</color>
+    <color name="text_translucent">#88000000</color>
+    <color name="gankio_text_type_grey">#707070</color>
+
+    <color name="bg">#F0F0F0</color>
+    <color name="txt_color">#48495F</color>
+
+    <!--电影评分-->
+    <color name="colorRateRed">#FB5B81</color>
+
+
+    //UI Color
+    <color name="colorPink">#F7795F</color>
+    <color name="colorMinorLightBlue">#FF6DAFFF</color>
+    <color name="colorMinorSkyBlue">#98DAFF</color>
+    <color name="colorMinorLightGreen">#5AB553</color>
+    <color name="colorMinorDarkGreen">#00B063</color>
+    <color name="colorFeedback">#F4F4F4</color>
+    <color name="colorBack">#F0F0F0</color>
+    <color name="colorTranslucent">#99000000</color>
+    <color name="colorWaitDealPink">#FFFF7E5F</color>
+    <color name="colorLine">#DFDFDF</color>
+    //Font Color
+
+    <color name="colorToolBar"></color>
+
+
+    //color
+    <color name="tram">#00000000</color>
+
+    <color name="colorMinorSecnondOrange">#FFAD7A</color>
+    <color name="colorPasswordWordTextView">#ADB4B9</color>
+
+    //Font Color
+    <color name="colorFourFont">#424242</color>
+    <color name="colorFiveFont">#666666</color>
+    <color name="colorSixFont">#999999</color>
+    <color name="colorSevenFont">#9E9E9E</color>
+    <color name="colorEndFont">#FFFFFF</color>
+    <color name="color6AFont">#AAAAAA</color>
+    <color name="color2A">#2A2A2A</color>
+    <color name="colorHalfAlphaFiveFont">#7FFFFFFF</color>
+    <color name="color6BFont">#BBBBBB</color>
+
+    <color name="colorHomeBg">#191919</color>
+    <color name="colorTextTotalMoney">#EEEEEE</color>
+    <color name="colorKeyPress">#6F6F6F</color>
+    <color name="colorKeyUnConfirm">#E9590E</color>
+    <color name="colorKeyConfirm">#FFAD7A</color>
+    <color name="colorRedBot">#FF0000</color>
+    <color name="colorTimeSelected">#008CEE</color>
+    <color name="colorTimeDefaulted">#F4FAFF</color>
+    <color name="colorTimeUnSelected">#F2F4F6</color>
+    <color name="colorUiIsUpload">#FFCDAF</color>
+    <color name="colorHistogramLevelTextColor">#E7ECEF</color>
+    <color name="colorSearchResultTopColor">#D8D8D8</color>
+
+
+
+    <!--终端管理软件资源文件-->
+    <color name="blueFirst">#5456EB</color>
+    <color name="blueSecond">#008CEE</color>
+
+    <!-- fileCotrol模块的颜色-->
+    <color name="colorTabLayoutLine">#FFD600</color>
+    <color name="colorOpenTextColor">#F2982C</color>
+    <color name="colorListItemColor">#172129</color>
+    <color name="colorItemDefaultColor">#C3CAD4</color>
+    <color name="colorTopGuideTextColor">#888C94</color>
+    <color name="colorListItemPressColor">#F1FAFF</color>
+    <color name="colorVerticalLineColor">#E9EEF1</color>
+    <color name="colorParamInputTextColor">#058AEF</color>
+    <color name="blueThird">#FF48CFFF</color>
+    <color name="colorHistogramLineColor">#D7DEE3</color>
+    <color name="colorHistogramBackGroundLineColor">#E3DDD7</color>
+    <color name="colorHistogramDefaultColor">#D9E8EE</color>
+    <color name="colorHistogramBottomColor">#24A5FF</color>
+    <color name="colorHistogramTopColor">#48CFFF</color>
+    <color name="colorHistogramDateDefault">#C3CAD4</color>
+    <color name="colorHistogramDateSelected">#888C94</color>
+
+    <color name="colorMinorDarkOrange">#FFF2982C</color>
+    <color name="colorYellow">#FFD600</color>
+
+    <color name="colorBg">#F2F4F7</color>
+    <color name="colorDiv">#E9EEF1</color>
+    <color name="colorProgressBar">#FF8C00</color>
+
+
+    //Font Color
+    <color name="colorFirstFont">#172129</color>
+    <color name="colorSecondFont">#888C94</color>
+    <color name="colorThirdFont">#C3CAD4</color>
+    <color name="colorDayFont">#333333</color>
+    <color name="test">#FF3F51B5</color>
+
+    <color name="clickTextColorFirst">#FFF2982C</color>
+    <color name="clickTextSecond">#008CEE</color>
+    <color name="paraUncheckColor">#D0EAFB</color>
+
+
+    <color name="alert_dialog_line">#c6c6c6</color>
+    <color name="action_sheet_blue">#037BFF</color>
+    <color name="action_sheet_red">#FD4A2E</color>
+    <color name="action_sheet_gray">#8F8F8F</color>
+    <color name="sd_color_black">#000000</color>
+    <color name="sd_color_white">#ffffff</color>
+    <color name="sd_color_red">#fa0303</color>
+    <color name="sd_color_blue">#030bfa</color>
+    <color name="sd_color_gray">#8F8F8F</color>
+
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#F0C38D</color>
+
+    <color name="ksw_md_solid_shadow">#33000000</color>
+
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#F2982C</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+    <color name="remote_code_color">#F2542C</color>
+    <color name="historyViewDividerColor">#99FFFFFF</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="color_key_background">#FBFCFF</color>
+    <color name="color_key_line">#D6D6D6</color>
+
+    <color name="keyboard_bg">#BDBDBD</color>
+    <color name="iv_back_bg">#F5F5F5</color>
+    <color name="key_normal_bg">#F5F5F5</color>
+    <color name="key_pressed_bg">#33000000</color>
+    <color name="btn_gray">#E0E0E0</color>
+    <color name="color_text_gray">#8D9198</color>
+    <color name="color_text_orange">#FF7735</color>
+</resources>

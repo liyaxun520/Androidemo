@@ -1,0 +1,54 @@
+<resources>
+    <string name="dialog_positive">Confirm</string>
+    <string name="dialog_negative">Cancel</string>
+    <string name="loading">加载中...</string>
+    <string name="load_failed">加载失败，点击重试</string>
+    <string name="press_again">再次点击退出应用</string>
+
+    <!--历史数据界面-->
+    <string name="history_day">Day</string>
+    <string name="history_week">Week</string>
+    <string name="history_month">Month</string>
+    <string name="history_year">Year</string>
+    <string name="history_Indoor">Indoor</string>
+    <string name="history_Temp">Temp</string>
+    <string name="history_Setpoint">Setpoint</string>
+    <string name="history_On">Cumulative</string>
+    <string name="history_Time">Time</string>
+    <string name="history_x_unit_day">(DAY)</string>
+    <string name="history_x_unit_hour">(HOUR)</string>
+    <string name="history_x_unit_month">(MONTH)</string>
+    <string name="history_y1_unit">(℃)</string>
+    <string name="history_y2_unit">(%)</string>
+
+    <!--能耗单位-->
+    <string name="y_unit_day">(min)</string>
+    <string name="y_unit_week">(hour)</string>
+    <string name="y_unit_month">(hour)</string>
+    <string name="x_unit_day">(hour)</string>
+    <string name="x_unit_week">(day)</string>
+    <string name="x_unit_month">(day)</string>
+    <string name="y_unit_degree">(KW/H)</string>
+    <string name="energy_consumption_day">DAY</string>
+    <string name="energy_consumption_week">WEEK</string>
+    <string name="energy_consumption_month">MONTH</string>
+
+    <string name="empty_network_error">Network error, Click Retry</string>
+    <string name="empty_no_data">There is no data, Click Retry</string>
+
+
+    <string name="str_un_pass">不通过</string>
+    <string name="str_pass">通过</string>
+    <string name="str_close">关闭</string>
+    <string name="str_confirm">确认</string>
+    <string name="input_hint">请输入文本</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="str_clear">清空</string>
+    <string name="str_open_file">打开文件</string>
+    <string name="str_upload_file">上传文件</string>
+    <string name="downloading">正在缓存</string>
+
+
+
+</resources>
