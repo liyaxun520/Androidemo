@@ -14,7 +14,7 @@ import android.support.annotation.DrawableRes;
 import android.view.View;
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * Bitmap处理工具类
  */
 

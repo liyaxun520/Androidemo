@@ -7,7 +7,7 @@ import android.content.Context;
 import java.util.Stack;
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * <p>
  * AppManager 管理Activity栈
  */

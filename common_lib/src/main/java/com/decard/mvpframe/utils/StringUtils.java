@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * 字符串工具类
  */
 public class StringUtils {

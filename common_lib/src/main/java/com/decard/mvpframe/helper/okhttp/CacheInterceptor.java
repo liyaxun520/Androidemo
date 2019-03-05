@@ -14,7 +14,7 @@ import okhttp3.Response;
 import static com.decard.mvpframe.utils.HttpUtils.getUserAgent;
 
 /**
- * Created by Horrarndoo on 2017/9/12.
+ * Created by lison on 2017/9/12.
  * <p>
  * CacheInterceptor
  */

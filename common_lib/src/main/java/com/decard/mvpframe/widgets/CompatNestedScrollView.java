@@ -11,7 +11,7 @@ import com.decard.mvpframe.utils.DisplayUtils;
 import com.decard.mvpframe.utils.StatusBarUtils;
 
 /**
- * Created by Horrarndoo on 2017/10/19.
+ * Created by lison on 2017/10/19.
  * <p>
  * 自定义NestedScrollView，主要实现根据滑动距离控制绑定View的alpha值
  */

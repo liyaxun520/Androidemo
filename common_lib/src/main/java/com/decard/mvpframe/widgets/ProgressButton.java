@@ -13,7 +13,7 @@ import android.widget.Button;
 import com.decard.mvpframe.R;
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * <p>
  * 带有进度变化的button
  */

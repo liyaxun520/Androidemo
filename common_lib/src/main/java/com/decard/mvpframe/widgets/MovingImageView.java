@@ -29,7 +29,7 @@ import com.decard.mvpframe.R;
 
 
 /**
- * Created by Horrarndoo on 2017/9/7.
+ * Created by lison on 2017/9/7.
  * <p>
  * 自定义可以背景滚动的ImageView
  */

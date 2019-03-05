@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 import com.decard.mvpframe.RxManager;
 
 /**
- * Created by Horrarndoo on 2017/4/25.
+ * Created by lison on 2017/4/25.
  * <p>
  * base presenter
  */

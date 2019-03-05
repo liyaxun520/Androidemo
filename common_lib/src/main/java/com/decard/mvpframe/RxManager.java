@@ -5,7 +5,7 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 /**
- * Created by Horrarndoo on 2017/9/12.
+ * Created by lison on 2017/9/12.
  * <p>
  * 用于管理Rxjava 注册订阅和取消订阅
  */

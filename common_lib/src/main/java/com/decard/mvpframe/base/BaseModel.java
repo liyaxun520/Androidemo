@@ -1,7 +1,7 @@
 package com.decard.mvpframe.base;
 
 /**
- * Created by Horrarndoo on 2017/4/25.
+ * Created by lison on 2017/4/25.
  * base model类
  */
 

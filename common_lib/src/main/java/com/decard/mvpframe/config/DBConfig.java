@@ -1,7 +1,7 @@
 package com.decard.mvpframe.config;
 
 /**
- * Created by Horrarndoo on 2017/9/13.
+ * Created by lison on 2017/9/13.
  * <p>
  * 数据库全局常量
  */

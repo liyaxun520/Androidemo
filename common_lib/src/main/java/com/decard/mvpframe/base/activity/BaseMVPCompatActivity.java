@@ -8,7 +8,7 @@ import com.decard.mvpframe.base.IBaseActivity;
 import com.decard.mvpframe.utils.ToastUtils;
 
 /**
- * Created by Horrarndoo on 2017/4/6.
+ * Created by lison on 2017/4/6.
  * <p>
  * Mvp Activity基类
  */

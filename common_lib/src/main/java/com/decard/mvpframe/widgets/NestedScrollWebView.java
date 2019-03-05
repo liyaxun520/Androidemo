@@ -10,7 +10,7 @@ import android.view.MotionEvent;
 import android.webkit.WebView;
 
 /**
- * Created by Horrarndoo on 2017/9/27.
+ * Created by lison on 2017/9/27.
  * <p>
  * 继承原生WebView，目的是为了和AppBarLayout、CollapsingToolbarLayout等Android Design Support Library控件配合使用。
  * <p>

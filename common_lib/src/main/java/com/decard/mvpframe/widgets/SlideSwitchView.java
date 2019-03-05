@@ -16,7 +16,7 @@ import com.decard.mvpframe.R;
 
 
 /**
- * Created by Horrarndoo on 2017/6/1.
+ * Created by lison on 2017/6/1.
  * <p>
  * 自定义滑动开关
  * <p>

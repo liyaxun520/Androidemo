@@ -4,7 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 
 /**
- * Created by Horrarndoo on 2017/4/17.
+ * Created by lison on 2017/4/17.
  * <p>
  * 等待提示dialog
  */

@@ -13,7 +13,7 @@ import okhttp3.Response;
 import static com.decard.mvpframe.utils.HttpUtils.getUserAgent;
 
 /**
- * Created by Horrarndoo on 2017/9/18.
+ * Created by lison on 2017/9/18.
  * <p>
  * 无网络时的缓存拦截器
  */

@@ -4,7 +4,7 @@ import java.io.Closeable;
 import java.io.IOException;
 
 /**
- * Created by Horrarndoo on 2017/8/31.
+ * Created by lison on 2017/8/31.
  * <p>
  * IO流工具类
  */

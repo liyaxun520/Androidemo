@@ -3,7 +3,7 @@ package com.decard.mvpframe.base;
 import android.support.annotation.NonNull;
 
 /**
- * Created by Horrarndoo on 2017/5/2.
+ * Created by lison on 2017/5/2.
  * fragment base view接口
  */
 

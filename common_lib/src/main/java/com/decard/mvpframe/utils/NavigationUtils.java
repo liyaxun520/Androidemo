@@ -4,7 +4,7 @@ import android.support.design.internal.NavigationMenuView;
 import android.support.design.widget.NavigationView;
 
 /**
- * Created by Horrarndoo on 2017/12/12.
+ * Created by lison on 2017/12/12.
  * <p>
  * NavigationView utils
  */

@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 
 /**
- * Created by Horrarndoo on 2017/9/7.
+ * Created by lison on 2017/9/7.
  * <p>
  * 屏幕相关工具类
  */

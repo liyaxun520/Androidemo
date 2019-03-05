@@ -1,7 +1,7 @@
 package com.decard.mvpframe.widgets.headclip;
 
 /**
- * Created by Horrarndoo on 2017/9/25.
+ * Created by lison on 2017/9/25.
  * <p>
  */
 

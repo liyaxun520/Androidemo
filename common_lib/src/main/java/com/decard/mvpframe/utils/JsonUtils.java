@@ -7,7 +7,7 @@ import com.google.gson.JsonSyntaxException;
 import java.lang.reflect.Type;
 
 /**
- * Created by Horrarndoo on 2017/9/20.
+ * Created by lison on 2017/9/20.
  * <p>
  * Json转换工具类
  */

@@ -18,7 +18,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * <p>
  * 滚动选择器
  */

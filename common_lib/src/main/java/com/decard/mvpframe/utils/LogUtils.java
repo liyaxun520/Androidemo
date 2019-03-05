@@ -6,7 +6,7 @@ import com.decard.mvpframe.BuildConfig;
 
 
 /**
- * Created by Horrarndoo on 2017/4/5.
+ * Created by lison on 2017/4/5.
  * <p>
  * Log工具类
  */

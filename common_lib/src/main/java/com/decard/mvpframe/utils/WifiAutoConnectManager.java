@@ -8,7 +8,7 @@ import android.net.wifi.WifiManager;
 import java.util.List;
 
 /**
- * Created by Horrarndoo on 2017/8/10.
+ * Created by lison on 2017/8/10.
  * <p>
  * 兼容Android 6.0以上手机连接wifi
  */
