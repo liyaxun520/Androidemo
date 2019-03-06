@@ -65,6 +65,7 @@ public class PieChartView extends View {
         Typeface font = Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
         mCirclePaint.setTypeface( font );
         mTextPaint.setStyle(Paint.Style.STROKE);
+        mTextPaint.setTextAlign(Paint.Align.CENTER);
 
     }
 
@@ -94,10 +95,15 @@ public class PieChartView extends View {
         }
 
         canvas.drawCircle(getMeasuredWidth() / 2, getMeasuredWidth() / 2, padding, mCirclePaint);
-        Paint.FontMetrics fontMetrics = mCirclePaint.getFontMetrics();
-        float bottomLineY = mRectF.centerY() - (fontMetrics.bottom - fontMetrics.top) / 2 - fontMetrics.top;
         if(!TextUtils.isEmpty(String.valueOf(nowPercent))) {
-            canvas.drawText(String.valueOf(nowPercent) +"%", mRectF.left + (mRectF.right - mRectF.left) / 2 - 20, bottomLineY, mTextPaint);
+
+            Paint.FontMetrics fontMetrics1 = mTextPaint.getFontMetrics();
+            float top = fontMetrics1.top;//为基线到字体上边框的距离,即上图中的top
+            float bottom = fontMetrics1.bottom;//为基线到字体下边框的距离,即上图中的bottom
+
+            int baseLineY = (int) (mRectF.centerY() - top/2 - bottom/2);//基线中间点的y轴计算公式
+
+            canvas.drawText(String.valueOf(nowPercent) +"%",mRectF.centerX(),baseLineY,mTextPaint);
         }
     }
 
