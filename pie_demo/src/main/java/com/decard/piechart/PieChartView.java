@@ -60,7 +60,7 @@ public class PieChartView extends View {
 
         mTextPaint = new Paint();
         mTextPaint.setColor(Color.parseColor("#FF272418"));
-        mTextPaint.setTextSize(38.0f);
+        mTextPaint.setTextSize(100.0f);
         mCirclePaint.setAntiAlias(true);
         Typeface font = Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
         mCirclePaint.setTypeface( font );
@@ -80,7 +80,7 @@ public class PieChartView extends View {
             return;
         }
         for (int i = 0; i < mPieModelList.size(); i++) {
-            if (mPieModelList.get(i).percent > 0) {
+            if (mPieModelList.get(i).percent > 0 && mPieModelList.get(i).percent <100) {
                 if (mAnimaAngle >= mPieModelList.get(i).startAngle && mAnimaAngle <= (mPieModelList.get(i).startAngle + mPieModelList.get(i).sweepAngle)) {
 
                     drawColor(canvas, mPieModelList.get(i).color, mPieModelList.get(i).startAngle, mAnimaAngle - mPieModelList.get(i).startAngle);
@@ -91,6 +91,8 @@ public class PieChartView extends View {
                 if (mPieModelList.get(i).selected) {
                     drawSelectedView(canvas, mPieModelList.get(i).color, mPieModelList.get(i).startAngle, mPieModelList.get(i).sweepAngle);
                 }
+            }else{
+                drawColor(canvas, mPieModelList.get(i).color, mPieModelList.get(i).startAngle, mAnimaAngle - mPieModelList.get(i).startAngle);
             }
         }
 

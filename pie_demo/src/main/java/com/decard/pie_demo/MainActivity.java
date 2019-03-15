@@ -39,11 +39,18 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
                 pieModelList.add(new PieModel("其他",color.get(i), 30));
             }
         }
-
         pieChart.setData(pieModelList);
         pieChart.startAnima();
 
+//        //TODO 新增暂无交易时界面显示 重新创建柱状图数据
+//        int color = ColorUtils.getDefaultColor();
+//        List<PieModel> list = new ArrayList<>();
+//        list.add(new PieModel("暂无交易",color, 100));
+//        pieChart.setData(list);
+//        pieChart.startAnima();
+
         rv = ((RecyclerView) findViewById(R.id.recyclerView));
+
         adapter = new MyAdapter(pieModelList);
         rv.setAdapter(adapter);
 
@@ -56,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
     @Override
     public void onItemClick(View view, int position) {
         PieModel pieModel = pieModelList.get(position);
+        pieChart.setData(pieModelList);
+        pieChart.invalidate();
         for (PieModel model : pieModelList) {
             if(model.eatName.equals(pieModel.eatName)){
                 model.selected = true;
@@ -65,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
             }
         }
         adapter.notifyDataSetChanged();
-        pieChart.setData(pieModelList);
-        pieChart.invalidate();
+
     }
 }

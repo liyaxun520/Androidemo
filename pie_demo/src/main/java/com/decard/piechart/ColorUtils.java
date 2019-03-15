@@ -9,10 +9,11 @@ public class ColorUtils {
 
     /**
      * 根据Ui图得到的颜色集合
+     *
      * @param size
      * @return
      */
-    public static List<Integer> getColor(int size){
+    public static List<Integer> getColor(int size) {
         List<Integer> allColors = new ArrayList<>();
         allColors.add(Color.parseColor("#FE679C"));
         allColors.add(Color.parseColor("#A973C0"));
@@ -21,9 +22,13 @@ public class ColorUtils {
         allColors.add(Color.parseColor("#96E054"));
         allColors.add(Color.parseColor("#FFFA58"));
         allColors.add(Color.parseColor("#FFBD49"));
-        if(size > allColors.size()){
+        if (size > allColors.size()) {
             return null;
         }
-        return allColors.subList(0,size);
+        return allColors.subList(0, size);
+    }
+
+    public static Integer getDefaultColor() {
+        return Color.parseColor("#EBEAE9");
     }
 }
