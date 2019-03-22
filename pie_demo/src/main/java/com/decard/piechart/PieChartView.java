@@ -10,7 +10,10 @@ import android.graphics.Typeface;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+
 import java.util.List;
 
 public class PieChartView extends View {
@@ -33,6 +36,7 @@ public class PieChartView extends View {
 
     private int nowPercent;     //当前百分比
 
+
     public PieChartView(Context context) {
         this(context, null);
     }
@@ -50,7 +54,7 @@ public class PieChartView extends View {
         mChartPaint = new Paint();
         mChartPaint.setAntiAlias(true);
         mChartPaint.setDither(true);
-        mChartPaint.setStrokeWidth(100);
+        mChartPaint.setStrokeWidth(50);
         mChartPaint.setStyle(Paint.Style.FILL);
 
         mCirclePaint = new Paint();
@@ -61,17 +65,19 @@ public class PieChartView extends View {
         mTextPaint = new Paint();
         mTextPaint.setColor(Color.parseColor("#FF272418"));
         mTextPaint.setTextSize(100.0f);
-        mCirclePaint.setAntiAlias(true);
+        mTextPaint.setAntiAlias(true);
         Typeface font = Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
-        mCirclePaint.setTypeface( font );
+        mTextPaint.setTypeface( font );
         mTextPaint.setStyle(Paint.Style.STROKE);
         mTextPaint.setTextAlign(Paint.Align.CENTER);
+
 
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
     }
 
     @Override
@@ -164,9 +170,11 @@ public class PieChartView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        padding = w / 5;
+        padding = w / 6;
         mRectF = new RectF(padding, padding, w - padding, w - padding);   //
         mSelectedRectF.set(mRectF);
+
+        Log.d("onSizeChanged ",mRectF.left+"   "+mRectF.top+"    "+mRectF.right+"    "+mRectF.bottom);
         //通过（dx，dy）插入矩形。如果 dx 是正的，则两边向内移动，使矩形变窄。如果 dx 是负的，则两边向外移动，使矩形更宽。这同样适用于 dy 和顶部和底部。
         mSelectedRectF.inset(-10, -10);
     }

@@ -8,14 +8,14 @@
 
     <RelativeLayout
         android:layout_centerInParent="true"
-        android:layout_width="315dp"
-        android:layout_height="130dp"
+        android:layout_width="@dimen/dp_315"
+        android:layout_height="@dimen/dp_130"
         android:background="@drawable/toast_general_bg">
 
         <TextView
             android:id="@+id/tv_message"
             android:layout_centerInParent="true"
-            android:textSize="14sp"
+            android:textSize="@dimen/sp_14"
             android:textColor="@color/colorEndFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

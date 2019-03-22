@@ -93,11 +93,7 @@ public class DBUtils {
         public void onOpen(SQLiteDatabase db) {
             super.onOpen(db);
             //数据库打开时就会被调用，将插入新表的操作方到onOpen中
-            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_ZHIHU));
-            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_WANGYI));
-            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_WEIXIN));
-            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_GANKIO_DAY));
-            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_GANKIO_CUSTOM));
+            db.execSQL(String.format(CREATE_TABLE_IF_NOT_EXISTS, DBConfig.TABLE_DK));
         }
 
         @Override

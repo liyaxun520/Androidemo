@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.decard.pie.Pie;
+import com.decard.pie.PieChart;
 import com.decard.piechart.ColorRandom;
 import com.decard.piechart.ColorUtils;
 import com.decard.piechart.PieChartView;
@@ -57,6 +59,28 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
         rv.setLayoutManager(new LinearLayoutManager(this));
         adapter.setOnItemClickListener(this);
 
+        init();
+
+        PieChart pieChart = (PieChart) findViewById(R.id.pie_chart);
+        //init pie chart
+        pieChart.setPie(pieList);
+
+        //set center text
+        pieChart.setCenterText("PieChartTest");
+
+        //draw pie chart
+        pieChart.startDrawPie();
+    }
+
+    List<Pie> pieList = null;
+    private void init(){
+        pieList = new ArrayList<>();
+
+        pieList.add(new Pie(60.5f,"60.5", Color.parseColor("#F48FB1")));
+        pieList.add(new Pie(71.2f,"71.2", Color.parseColor("#CE93D8")));
+        pieList.add(new Pie(90.9f,"90.9", Color.parseColor("#90CAF9")));
+        pieList.add(new Pie(50f,"50", Color.parseColor("#FFE082")));
+        pieList.add(new Pie(100f,"100", Color.parseColor("#FFAB91")));
     }
 
 

@@ -35,7 +35,7 @@ public class RetrofitCreateHelper {
             //设置Cache拦截器
             .addNetworkInterceptor(cacheInterceptor)
             .addInterceptor(cacheInterceptor)
-            .cache(HttpCache.getCache())
+//            .cache(HttpCache.getCache())
             //time out
             .connectTimeout(TIMEOUT_CONNECTION, TimeUnit.SECONDS)
             .readTimeout(TIMEOUT_READ, TimeUnit.SECONDS)

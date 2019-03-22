@@ -20,7 +20,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 
-import com.decard.mvpframe.global.BaseApplication;
+import com.decard.mvpframe.baseapp.BaseApplication;
 
 import java.io.File;
 

@@ -13,12 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.decard.mvpframe.R;
-import com.decard.mvpframe.global.BaseApplication;
+import com.decard.mvpframe.baseapp.BaseApplication;
 import com.decard.mvpframe.utils.AppUtils;
 import com.decard.mvpframe.widgets.WaitPorgressDialog;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportFragment;
 
 /**
@@ -33,7 +31,6 @@ public abstract class BaseCompatFragment extends SupportFragment {
     protected Activity mActivity;
     protected BaseApplication mApplication;
     protected WaitPorgressDialog mWaitPorgressDialog;
-    private Unbinder binder;
 
     @Override
     public void onAttach(Context context) {
@@ -58,18 +55,11 @@ public abstract class BaseCompatFragment extends SupportFragment {
         super.onViewCreated(view, savedInstanceState);
         mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         TAG = getClass().getSimpleName();
-        binder = ButterKnife.bind(this, view);
         getBundle(getArguments());
         initData();
         initUI(view, savedInstanceState);
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        if (binder != null)
-            binder.unbind();
-    }
 
     @Override
     public void onDetach() {

@@ -1,4 +1,4 @@
-package cn.jimzjy.pie_chart;
+package com.decard.pie;
 
 import android.view.View;
 import android.animation.ValueAnimator;
@@ -15,6 +15,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 
+
+import com.decard.pie_demo.R;
 
 import java.util.ArrayList;
 import java.util.List;

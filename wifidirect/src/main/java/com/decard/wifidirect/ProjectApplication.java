@@ -1,6 +1,6 @@
 package com.decard.wifidirect;
 
-import com.decard.mvpframe.global.BaseApplication;
+import com.decard.mvpframe.baseapp.BaseApplication;
 
 public class ProjectApplication extends BaseApplication {
 

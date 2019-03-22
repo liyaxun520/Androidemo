@@ -7,15 +7,22 @@
 
     <com.decard.piechart.PieChartView
         android:id="@+id/id_pie_chart"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/id_pie_chart"/>
+        android:layout_below="@id/id_pie_chart"
+        android:visibility="visible"/>
 
-
+    <com.decard.pie.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"/>
 </RelativeLayout>

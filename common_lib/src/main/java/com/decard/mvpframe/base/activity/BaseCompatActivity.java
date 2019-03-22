@@ -12,14 +12,13 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.decard.mvpframe.AppManager;
 import com.decard.mvpframe.R;
-import com.decard.mvpframe.global.BaseApplication;
+import com.decard.mvpframe.baseapp.BaseApplication;
 import com.decard.mvpframe.utils.AndroidBarUtils;
 import com.decard.mvpframe.utils.AppUtils;
 import com.decard.mvpframe.utils.SpUtils;
 import com.decard.mvpframe.utils.StatusBarUtils;
 import com.decard.mvpframe.utils.ThemeUtils;
 import com.decard.mvpframe.widgets.WaitPorgressDialog;
-import butterknife.ButterKnife;
 import me.yokeyword.fragmentation.SupportActivity;
 import me.yokeyword.fragmentation.SupportActivityDelegate;
 import me.yokeyword.fragmentation.anim.DefaultVerticalAnimator;
@@ -90,7 +89,6 @@ public abstract class BaseCompatActivity extends SupportActivity {
         setTheme(ThemeUtils.themeArr[SpUtils.getThemeIndex(this)][
                 SpUtils.getNightModel(this) ? 1 : 0]);
         setContentView(getLayoutId());
-        ButterKnife.bind(this);
         StatusBarUtils.setTransparent(this);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initData();
