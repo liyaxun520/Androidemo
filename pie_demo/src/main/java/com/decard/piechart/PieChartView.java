@@ -14,6 +14,10 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.mikephil.charting.utils.Utils;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PieChartView extends View {
@@ -34,7 +38,7 @@ public class PieChartView extends View {
 
     private RectF mSelectedRectF = new RectF();
 
-    private int nowPercent;     //当前百分比
+    private double nowPercent = 0;     //当前百分比
 
 
     public PieChartView(Context context) {
@@ -64,7 +68,7 @@ public class PieChartView extends View {
 
         mTextPaint = new Paint();
         mTextPaint.setColor(Color.parseColor("#FF272418"));
-        mTextPaint.setTextSize(100.0f);
+        mTextPaint.setTextSize(70.0f);
         mTextPaint.setAntiAlias(true);
         Typeface font = Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
         mTextPaint.setTypeface( font );
@@ -86,7 +90,9 @@ public class PieChartView extends View {
             return;
         }
         for (int i = 0; i < mPieModelList.size(); i++) {
-            if (mPieModelList.get(i).percent > 0 && mPieModelList.get(i).percent <100) {
+            double percent = mPieModelList.get(i).percent;
+
+            if (percent > 0 && percent <100) {
                 if (mAnimaAngle >= mPieModelList.get(i).startAngle && mAnimaAngle <= (mPieModelList.get(i).startAngle + mPieModelList.get(i).sweepAngle)) {
 
                     drawColor(canvas, mPieModelList.get(i).color, mPieModelList.get(i).startAngle, mAnimaAngle - mPieModelList.get(i).startAngle);
@@ -111,7 +117,9 @@ public class PieChartView extends View {
 
             int baseLineY = (int) (mRectF.centerY() - top/2 - bottom/2);//基线中间点的y轴计算公式
 
-            canvas.drawText(String.valueOf(nowPercent) +"%",mRectF.centerX(),baseLineY,mTextPaint);
+            String myPercent = myPercent(nowPercent, 100);
+            Log.d("onDraw  ",myPercent+"    "+nowPercent);
+            canvas.drawText(myPercent,mRectF.centerX(),baseLineY,mTextPaint);
         }
     }
 
@@ -122,7 +130,7 @@ public class PieChartView extends View {
 
     }
 
-    public void setPieChartPercent(int percent){
+    public void setPieChartPercent(double percent){
         nowPercent = percent;
     }
 
@@ -156,6 +164,15 @@ public class PieChartView extends View {
 
     public void setData(List<PieModel> pieModelList) {
         this.mPieModelList = pieModelList;
+
+        int count = 0;
+        for (int i = 0; i < mPieModelList.size(); i++) {
+            count +=mPieModelList.get(i).count;
+            Log.e("setData",mPieModelList.get(i).count+"");
+        }
+
+        Log.d("setData count  ",String.valueOf(count));
+
         for (int i = 0; i < mPieModelList.size(); i++) {
             PieModel model = mPieModelList.get(i);
             if (i == 0) {
@@ -163,14 +180,39 @@ public class PieChartView extends View {
             } else {
                 model.startAngle = mPieModelList.get(i - 1).startAngle + mPieModelList.get(i - 1).sweepAngle;
             }
-            model.sweepAngle = (model.percent * 360 /100);
+
+            //计算百分比
+            model.percent = model.count *100 / count;
+
+            Log.d("setData  ",model.percent+"");
+            model.sweepAngle = (float) ((model.percent * 360) /100);
         }
     }
+
+    public static String myPercent(double y, double z) {
+        String baifenbi = "";// 接受百分比的值
+        double baiy = y * 1.0;
+        double baiz = z * 1.0;
+        if(y >0) {
+            double fen = baiy / baiz;
+            // nf.setMinimumFractionDigits( 2 ); 保留到小数点后几位
+            DecimalFormat df1 = new DecimalFormat("##.00%");
+            // ##.00%
+            // 百分比格式，后面不足2位的用0补齐
+            // baifenbi=nf.format(fen);
+            baifenbi = df1.format(fen);
+        }else {
+            baifenbi = "0.00%";
+        }
+        System.out.println(baifenbi);
+        return baifenbi;
+    }
+
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        padding = w / 6;
+        padding = w / 5;
         mRectF = new RectF(padding, padding, w - padding, w - padding);   //
         mSelectedRectF.set(mRectF);
 

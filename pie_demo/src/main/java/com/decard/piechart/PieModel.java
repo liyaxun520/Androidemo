@@ -10,22 +10,25 @@ public class PieModel {
 
     public int		color;		// 显示的颜色
 
-    public int	   percent;	// 所占百分比
+    public double	   percent;	// 所占百分比
 
     public boolean	selected;	// true为选中
 
-    public PieModel(int color, int percent) {
+    public double count;  //交易笔数
+
+
+    public PieModel(int color, double percent) {
         this.color = color;
         this.percent = percent;
     }
 
-    public PieModel(String name,int color, int percent) {
+    public PieModel(String name,int color, double count) {
         this.eatName = name;
         this.color = color;
-        this.percent = percent;
+        this.count = count;
     }
 
-    public PieModel(String name,int color, int percent, boolean selected) {
+    public PieModel(String name,int color, double percent, boolean selected) {
         this.eatName = name;
         this.color = color;
         this.percent = percent;

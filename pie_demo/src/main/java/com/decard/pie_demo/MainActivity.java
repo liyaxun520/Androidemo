@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import com.decard.pie.Pie;
@@ -34,11 +35,11 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
         List<Integer> color = ColorUtils.getColor(7);
         for (int i = 0; i < 7; i++) {
             if (i == 0) {
-                pieModelList.add(new PieModel("大蔬菜0",color.get(i), 20));
+                pieModelList.add(new PieModel("大蔬菜0",color.get(i), 5000));
             } else if( i< 6){
-                pieModelList.add(new PieModel("菠菜"+i,color.get(i), 10));
+                pieModelList.add(new PieModel("菠菜"+i,color.get(i), 100));
             }else{
-                pieModelList.add(new PieModel("其他",color.get(i), 30));
+                pieModelList.add(new PieModel("其他",color.get(i), 3000));
             }
         }
         pieChart.setData(pieModelList);
@@ -59,37 +60,19 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
         rv.setLayoutManager(new LinearLayoutManager(this));
         adapter.setOnItemClickListener(this);
 
-        init();
 
-        PieChart pieChart = (PieChart) findViewById(R.id.pie_chart);
-        //init pie chart
-        pieChart.setPie(pieList);
-
-        //set center text
-        pieChart.setCenterText("PieChartTest");
-
-        //draw pie chart
-        pieChart.startDrawPie();
     }
 
-    List<Pie> pieList = null;
-    private void init(){
-        pieList = new ArrayList<>();
 
-        pieList.add(new Pie(60.5f,"60.5", Color.parseColor("#F48FB1")));
-        pieList.add(new Pie(71.2f,"71.2", Color.parseColor("#CE93D8")));
-        pieList.add(new Pie(90.9f,"90.9", Color.parseColor("#90CAF9")));
-        pieList.add(new Pie(50f,"50", Color.parseColor("#FFE082")));
-        pieList.add(new Pie(100f,"100", Color.parseColor("#FFAB91")));
-    }
 
 
     @Override
     public void onItemClick(View view, int position) {
         PieModel pieModel = pieModelList.get(position);
-        pieChart.setData(pieModelList);
-        pieChart.invalidate();
+
+
         for (PieModel model : pieModelList) {
+            Log.d("onItemClick",pieModel.percent+"");
             if(model.eatName.equals(pieModel.eatName)){
                 model.selected = true;
                 pieChart.setPieChartPercent(model.percent);
@@ -97,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnItemC
                 model.selected = false;
             }
         }
+        pieChart.setData(pieModelList);
+        pieChart.invalidate();
         adapter.notifyDataSetChanged();
 
     }

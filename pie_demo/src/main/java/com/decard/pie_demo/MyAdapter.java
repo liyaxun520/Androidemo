@@ -3,6 +3,7 @@ package com.decard.pie_demo;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import com.decard.piechart.PieModel;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
@@ -37,7 +39,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         int color = mDatas.get(position).color;
         myViewHolder.ivColor.setBackgroundColor(color);
         myViewHolder.tvEat.setText(mDatas.get(position).eatName);
-        myViewHolder.tvPercent.setText((mDatas.get(position).percent) + "%");
+        double percent = mDatas.get(position).percent;
+        Log.e("onBindViewHolder  ",percent+"");
+        System.out.println(String.format("%.2f",percent));
+        DecimalFormat df = new DecimalFormat(".00");
+
+        myViewHolder.tvPercent.setText(df.format(percent) + "%");
 
         if (position == getthisPosition()) {
             myViewHolder.rootView.setBackgroundColor(Color.parseColor("#FFF6F4F3"));
