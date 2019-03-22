@@ -39,13 +39,13 @@ public class RxDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx_demo);
-        baseRxJava();
-        startSplash();
-        orderSendStr();
-        orderSendBytes();
+//        baseRxJava();
+//        startSplash();
+//        orderSendStr();
+//        orderSendBytes();
         iv = findViewById(R.id.iv);
 
-        getBitmapByAddress();
+//        getBitmapByAddress();
         //Flowable 用于订阅 Subscriber ， 是支持背压（Backpressure）的
         flatMapDemo();
     }
@@ -90,6 +90,7 @@ public class RxDemoActivity extends AppCompatActivity {
                                 }
                             };
                         }
+
                         return null;
                     }
                 }).observeOn(AndroidSchedulers.mainThread())
