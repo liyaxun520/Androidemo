@@ -3,11 +3,31 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common_lib" />
+            <option value="$PROJECT_DIR$/ftp_client" />
+            <option value="$PROJECT_DIR$/http-net" />
+            <option value="$PROJECT_DIR$/kotlin_demo" />
+            <option value="$PROJECT_DIR$/lottie_demo" />
+            <option value="$PROJECT_DIR$/material_spinner" />
+            <option value="$PROJECT_DIR$/ndkdemo" />
+            <option value="$PROJECT_DIR$/pie_demo" />
+            <option value="$PROJECT_DIR$/recvsmooth" />
+            <option value="$PROJECT_DIR$/rxdemo" />
+            <option value="$PROJECT_DIR$/screenmatchdemo" />
+            <option value="$PROJECT_DIR$/singlecheck" />
+            <option value="$PROJECT_DIR$/socketdemo" />
+            <option value="$PROJECT_DIR$/usb_camera" />
+            <option value="$PROJECT_DIR$/usb_libs" />
+            <option value="$PROJECT_DIR$/voice_image" />
+            <option value="$PROJECT_DIR$/wifidirect" />
+            <option value="$PROJECT_DIR$/x2cdemo" />
+          </set>
+        </option>
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
