@@ -152,7 +152,7 @@ object L{
 
     fun String.isBlank(msg:String):Boolean {
 
-        return msg==null || msg.length==0;
+        return msg.isEmpty()
     }
 
     fun String.isNotBlank(msg:String):Boolean {

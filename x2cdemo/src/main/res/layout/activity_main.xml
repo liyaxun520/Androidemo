@@ -1,14 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.decard.x2cdemo.widget.CentralTractionButton
+        android:id="@+id/ctt_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        app:normalexternalbackground="@mipmap/iv_rb1_bg_normal"
+        app:normalinsidebackground="@mipmap/iv_rb1_in_normal"
+        app:selectedexternalbackground="@mipmap/iv_rb1_bg_selected"
+        app:selectedinsidebackground="@mipmap/iv_rb1_in_selected"
+        app:text="消息"
+        app:textdimension="12sp" />
+
+
+    -
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:orientation="horizontal">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn1_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选中"
+            android:onClick="checkClick"/>
+
+        <Button
+            android:id="@+id/btn2_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="取消选中"
+            android:onClick="unCheckClick"/>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <com.decard.x2cdemo.widget.CentralTractionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            app:normalexternalbackground="@mipmap/iv_rb1_bg_normal"
+            app:normalinsidebackground="@mipmap/iv_rb1_in_normal"
+            app:selectedexternalbackground="@mipmap/iv_rb1_bg_selected"
+            app:selectedinsidebackground="@mipmap/iv_rb1_in_selected"
+            app:text="消息"
+            android:textColor="@color/colorAccent"
+            app:textdimension="12sp" />
+        <com.decard.x2cdemo.widget.CentralTractionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            app:normalexternalbackground="@mipmap/iv_rb1_bg_normal"
+            app:normalinsidebackground="@mipmap/iv_rb1_in_normal"
+            app:selectedexternalbackground="@mipmap/iv_rb1_bg_selected"
+            app:selectedinsidebackground="@mipmap/iv_rb1_in_selected"
+            app:text="消息"
+            app:textdimension="12sp" />
+        <com.decard.x2cdemo.widget.CentralTractionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            app:normalexternalbackground="@mipmap/iv_rb1_bg_normal"
+            app:normalinsidebackground="@mipmap/iv_rb1_in_normal"
+            app:selectedexternalbackground="@mipmap/iv_rb1_bg_selected"
+            app:selectedinsidebackground="@mipmap/iv_rb1_in_selected"
+            app:text="消息"
+            app:textdimension="12sp" />
+        <com.decard.x2cdemo.widget.CentralTractionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            app:normalexternalbackground="@mipmap/iv_rb1_bg_normal"
+            app:normalinsidebackground="@mipmap/iv_rb1_in_normal"
+            app:selectedexternalbackground="@mipmap/iv_rb1_bg_selected"
+            app:selectedinsidebackground="@mipmap/iv_rb1_in_selected"
+            app:text="消息"
+            app:textdimension="12sp" />
+    </RadioGroup>
+
+</RelativeLayout>

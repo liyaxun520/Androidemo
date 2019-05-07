@@ -1,7 +1,9 @@
 package com.example.kotlin_demo
 
+import android.nfc.Tag
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.Scheduler
@@ -11,14 +13,22 @@ import io.reactivex.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
+    val TAG:String = MainActivity::javaClass.name
     var disposable:Disposable? = null
 
+    val authors = setOf("a","b","c")
+    val writers = setOf("b","c","a")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        L.d("onCreate")
         L.init(this.javaClass)
-
+        L.d("onCreate")
+        // sets ignore element order ==
+        var b = (authors == writers)
+        //distinct references. ===
+        var bRefer = (authors === writers)
+        L.d("数据是否一致 $b" )
+        L.e("引用是否一致 $bRefer")
     }
 
     private fun sayHello() {

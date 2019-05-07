@@ -3,6 +3,8 @@ package com.decard.mvpframe.helper;
 
 import com.decard.mvpframe.helper.okhttp.CacheInterceptor;
 import com.decard.mvpframe.helper.okhttp.HttpCache;
+import com.decard.mvpframe.helper.okhttp.NetInterceptor;
+import com.decard.mvpframe.helper.okhttp.NoNetInterceptor;
 import com.decard.mvpframe.helper.okhttp.TrustManager;
 
 import java.util.concurrent.TimeUnit;
@@ -26,6 +28,8 @@ public class RetrofitCreateHelper {
     private static final HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor()
             .setLevel(HttpLoggingInterceptor.Level.BODY);
     private static CacheInterceptor cacheInterceptor = new CacheInterceptor();
+    private static NoNetInterceptor noNetInterceptor = new NoNetInterceptor();
+    private static NetInterceptor netInterceptor = new NetInterceptor();
     private static OkHttpClient okHttpClient = new OkHttpClient.Builder()
             //SSL证书
             .sslSocketFactory(TrustManager.getUnsafeOkHttpClient())
@@ -33,7 +37,8 @@ public class RetrofitCreateHelper {
             //打印日志
             .addInterceptor(interceptor)
             //设置Cache拦截器
-            .addNetworkInterceptor(cacheInterceptor)
+            .addNetworkInterceptor(noNetInterceptor)
+            .addNetworkInterceptor(netInterceptor)
             .addInterceptor(cacheInterceptor)
 //            .cache(HttpCache.getCache())
             //time out

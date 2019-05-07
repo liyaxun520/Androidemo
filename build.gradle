@@ -11,11 +11,13 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.4.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath "com.tencent.bugly:tinker-support:1.0.8"
     }
 }
 
@@ -73,4 +75,6 @@ ext {
     PhotoViewVersion = '1.4.1'
     BottomSheetVersion = '1.3.0@aar'
     glideTransformationVersion = '2.0.1'
+
+    room_version = "1.0.0"
 }
