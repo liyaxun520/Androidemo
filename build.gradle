@@ -19,7 +19,10 @@ buildscript {
 
         classpath "com.tencent.bugly:tinker-support:1.0.8"
     }
+
+
 }
+
 
 allprojects {
     repositories {

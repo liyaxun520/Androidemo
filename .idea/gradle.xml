@@ -14,9 +14,11 @@
             <option value="$PROJECT_DIR$/common_lib" />
             <option value="$PROJECT_DIR$/crash_restart" />
             <option value="$PROJECT_DIR$/decoration_pattern" />
+            <option value="$PROJECT_DIR$/f_a_msg" />
             <option value="$PROJECT_DIR$/ftp_client" />
             <option value="$PROJECT_DIR$/http-net" />
             <option value="$PROJECT_DIR$/kotlin_demo" />
+            <option value="$PROJECT_DIR$/kotlin_mvvm_demo" />
             <option value="$PROJECT_DIR$/lottie_demo" />
             <option value="$PROJECT_DIR$/material_spinner" />
             <option value="$PROJECT_DIR$/ndkdemo" />

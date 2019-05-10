@@ -1,5 +1,6 @@
 package com.example.kotlin_demo
 
+import android.content.Intent
 import android.nfc.Tag
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,10 @@ import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +34,16 @@ class MainActivity : AppCompatActivity() {
         var bRefer = (authors === writers)
         L.d("数据是否一致 $b" )
         L.e("引用是否一致 $bRefer")
+
+        //创建协程
+        GlobalScope.launch (Dispatchers.Main){
+            // 执行一个延迟10秒的函数
+            delay(5000L)
+            L.d("当前线程  "+Thread.currentThread().name)
+            var intent = Intent(this@MainActivity, SecondActivity::class.java)
+
+            startActivity(intent)
+        }
     }
 
     private fun sayHello() {

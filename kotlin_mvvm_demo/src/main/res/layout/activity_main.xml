@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="animalVm"
+            type="com.example.kotlin_mvvm_demo.viewmodel.AnimalViewModel" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{animalVm.animalInfo}"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click me!"
+            android:layout_below="@id/tv"
+            android:onClick="@{()->animalVm.shout()}"
+            />
+
+
+    </RelativeLayout>
+</layout>
