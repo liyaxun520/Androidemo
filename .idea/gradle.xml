@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/ftp_client" />
             <option value="$PROJECT_DIR$/http-net" />
             <option value="$PROJECT_DIR$/kotlin_demo" />
+            <option value="$PROJECT_DIR$/kotlin_mvp" />
+            <option value="$PROJECT_DIR$/kotlin_mvp_lib" />
             <option value="$PROJECT_DIR$/kotlin_mvvm_demo" />
             <option value="$PROJECT_DIR$/lottie_demo" />
             <option value="$PROJECT_DIR$/material_spinner" />
@@ -39,6 +41,7 @@
             <option value="$PROJECT_DIR$/threadlocal" />
             <option value="$PROJECT_DIR$/usb_camera" />
             <option value="$PROJECT_DIR$/usb_libs" />
+            <option value="$PROJECT_DIR$/vertical_view" />
             <option value="$PROJECT_DIR$/voice_image" />
             <option value="$PROJECT_DIR$/wifidirect" />
             <option value="$PROJECT_DIR$/x2cdemo" />

@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     var binding:ActivityMainBinding ?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         var animalViewModel = AnimalViewModel(Animal("dog", 0))

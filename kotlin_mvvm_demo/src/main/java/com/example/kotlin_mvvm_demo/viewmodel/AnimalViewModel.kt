@@ -3,7 +3,7 @@ package com.example.kotlin_mvvm_demo.viewmodel
 import android.databinding.ObservableField
 import com.example.kotlin_mvvm_demo.model.Animal
 
-class AnimalViewModel(val animal:Animal){
+class AnimalViewModel(private val animal:Animal){
     val animalInfo = ObservableField<String>("")
 
     //点击按钮调用方法
