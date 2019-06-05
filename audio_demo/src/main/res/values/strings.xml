@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">audio_demo</string>
+
+    <string name="voice_msg_input_hint_speaking">Saying ...</string>
+    <string name="voice_msg_input_hint_time_limited_formatter" formatted="false">%d s left</string>
+
+</resources>
