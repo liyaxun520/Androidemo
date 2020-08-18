@@ -1,13 +1,15 @@
-package com.itdais.materialdesignding.bottomsheet;
+package com.decard.bottomsheetdialog.bottomsheet;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.itdais.materialdesignding.R;
+import com.decard.bottomsheetdialog.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 
 public class BottomSheetActivity extends AppCompatActivity {
@@ -47,7 +49,9 @@ public class BottomSheetActivity extends AppCompatActivity {
                 mBottomSheetDialog.show();
                 break;
             case R.id.button2:
-                new FullSheetDialogFragment().show(getSupportFragmentManager(), "dialog");
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                new FullSheetDialogFragment().show(fragmentTransaction, "TAG");
                 break;
         }
     }

@@ -22,6 +22,7 @@ import com.example.audio.AudioRecorder;
 import com.example.audio.PlayConfig;
 import com.example.audio.RxAmplitude;
 import com.example.audio.RxAudioPlayer;
+import com.tbruyelle.rxpermissions2.Permission;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
@@ -34,6 +35,7 @@ import java.util.Queue;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.internal.functions.Functions;
 import io.reactivex.schedulers.Schedulers;
 
@@ -63,6 +65,13 @@ class AudioRecordActivity extends RxAppCompatActivity {
 
         mPermissions = new RxPermissions(this);
 
+        mPermissions.request(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .subscribe(new Consumer<Boolean>() {
+                    @Override
+                    public void accept(Boolean aBoolean) throws Exception {
+
+                    }
+                });
         initView();
     }
 

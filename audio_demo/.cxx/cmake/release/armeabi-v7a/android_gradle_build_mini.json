@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "audio-processor-Release-armeabi-v7a": {
+      "artifactName": "audio-processor",
+      "buildCommand": "D:\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\release\\armeabi-v7a --target audio-processor",
+      "abi": "armeabi-v7a",
+      "output": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libaudio-processor.so"
+    }
+  }
+}

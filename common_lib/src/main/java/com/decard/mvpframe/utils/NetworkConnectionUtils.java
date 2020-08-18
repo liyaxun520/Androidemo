@@ -31,7 +31,7 @@ public class NetworkConnectionUtils {
     /**
      * 连接指定
      *
-     * @param manager
+     * @param managerisNetworkConnected
      * @param wifiSSID
      * @return
      */

@@ -17,6 +17,7 @@ fun main(args: Array<String>) {
     Greeter("lison").greet()
     Greeter(Greeter("zs")).greet()
     test()
+
 }
 
 fun test(){

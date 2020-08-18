@@ -6,12 +6,13 @@
         android:id="@+id/detailshow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="====================="
+        android:text=""
         android:textSize="@dimen/sp_25"
         android:textColor="@color/colorAccent"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/iv_category"/>
+        android:id="@+id/iv_category"
+        android:layout_below="@id/detailshow"/>
 </RelativeLayout>

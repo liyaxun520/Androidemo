@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"E:/2019year_data/practiceDemo/Androidemo/audio_demo/src/main/cpp/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"audio-processor-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "audio-processor",
+			"buildCommand" : "D:\\sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\release\\armeabi-v7a --target audio-processor",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/NdkPath/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/NdkPath/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot -Daudio_processor_EXPORTS  -isystem D:/NdkPath/android-ndk-r16b-windows-x86_64/android-ndk-r16b/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "E:/2019year_data/practiceDemo/Androidemo/audio_demo/src/main/cpp/smbPitchShift.c",
+					"workingDirectory" : "E:/2019year_data/practiceDemo/Androidemo/audio_demo/.cxx/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "E:/2019year_data/practiceDemo/Androidemo/audio_demo/build/intermediates/cmake/release/obj/armeabi-v7a/libaudio-processor.so",
+			"toolchain" : "2975881133"
+		}
+	},
+	"toolchains" : 
+	{
+		"2975881133" : 
+		{
+			"cCompilerExecutable" : "D:/NdkPath/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/NdkPath/android-ndk-r16b-windows-x86_64/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

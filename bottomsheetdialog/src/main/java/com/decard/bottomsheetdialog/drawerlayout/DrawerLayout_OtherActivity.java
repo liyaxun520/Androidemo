@@ -1,10 +1,11 @@
-package com.itdais.materialdesignding.drawerlayout;
+package com.decard.bottomsheetdialog.drawerlayout;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.itdais.materialdesignding.R;
+import com.decard.bottomsheetdialog.R;
+
 
 public class DrawerLayout_OtherActivity extends AppCompatActivity {
 

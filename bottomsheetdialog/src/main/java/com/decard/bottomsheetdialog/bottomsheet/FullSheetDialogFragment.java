@@ -1,13 +1,14 @@
-package com.itdais.materialdesignding.bottomsheet;
+package com.decard.bottomsheetdialog.bottomsheet;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.View;
 
-import com.itdais.materialdesignding.R;
+import com.decard.bottomsheetdialog.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+
 
 public class FullSheetDialogFragment extends BottomSheetDialogFragment {
     private BottomSheetBehavior mBehavior;

@@ -1,12 +1,13 @@
-package com.itdais.materialdesignding;
+package com.decard.bottomsheetdialog;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.itdais.materialdesignding.bottomsheet.BottomSheetActivity;
-import com.itdais.materialdesignding.drawerlayout.DrawerLayoutMainActivity;
+import com.decard.bottomsheetdialog.bottomsheet.BottomSheetActivity;
+import com.decard.bottomsheetdialog.drawerlayout.DrawerLayoutMainActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 

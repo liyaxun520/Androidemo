@@ -2,6 +2,7 @@ package com.example.aop
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.os.SystemClock
 import android.widget.ImageView
 import java.util.concurrent.locks.ReentrantLock
@@ -18,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
 //        var bytes2Bitmap = ConvertUtils.bytes2Bitmap(ConvertUtils.hexString2Bytes(msg))
 //        findViewById<ImageView>(R.id.photo).setImageBitmap(bytes2Bitmap)
-
 
 
     }

@@ -11,7 +11,7 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.lvr.timeline.app.AppApplication;
+import com.ndk.realmdb_demo.app.AppApplication;
 
 
 /**

@@ -170,6 +170,7 @@ public final class AudioRecorder {
             Log.w(TAG, "startRecord fail, prepare fail: " + exception.getMessage());
             setError(ERROR_INTERNAL);
             mRecorder.reset();
+
             mRecorder.release();
             mRecorder = null;
             return false;

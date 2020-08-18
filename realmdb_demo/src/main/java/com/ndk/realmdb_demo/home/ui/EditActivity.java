@@ -19,10 +19,10 @@ import android.widget.TextView;
 
 import com.borax12.materialdaterangepicker.time.RadialPickerLayout;
 import com.borax12.materialdaterangepicker.time.TimePickerDialog;
-import com.lvr.timeline.R;
-import com.lvr.timeline.app.AppConstantValue;
-import com.lvr.timeline.base.BaseActivity;
-import com.lvr.timeline.bean.TimeInfo;
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.app.AppConstantValue;
+import com.ndk.realmdb_demo.base.BaseActivity;
+import com.ndk.realmdb_demo.bean.TimeInfo;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -66,7 +66,7 @@ public class EditActivity extends BaseActivity implements View.OnClickListener, 
     @Override
     public void initView() {
         mToolbar.setTitle("添加任务");
-        mToolbar.setTitleTextColor(getResources().getColor(R.color.white));
+        mToolbar.setTitleTextColor(getResources().getColor(R.color.colorPrimary));
         setSupportActionBar(mToolbar);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

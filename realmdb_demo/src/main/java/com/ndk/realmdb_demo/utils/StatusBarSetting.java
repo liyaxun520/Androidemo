@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.lvr.timeline.R;
-import com.lvr.timeline.widget.StatusBarView;
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.widget.StatusBarView;
 
 
 /**

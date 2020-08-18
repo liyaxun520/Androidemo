@@ -16,7 +16,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.lvr.timeline.R;
+import com.ndk.realmdb_demo.R;
+
 
 /**
  * Created by lvr on 2017/4/7.

@@ -1,0 +1,7 @@
+在UML类图中，常见的有以下几种关系:
+泛化（Generalization）,   泛化关系(Generalization)也就是继承关系，也称为“is-a-kind-of”关系，泛化关系用于描述父类与子类之间的关系，父类又称作基类或超类，子类又称作派生类。在UML中，泛 化关系用带空心三角形的直线来表示
+实现（Realization,
+关联（Association),
+聚合（Aggregation）,
+组合(Composition),
+依赖(Dependency)    在UML中，依赖关系用带箭头的虚线表示，由依赖的一方指向被依赖的一方  司机  小车关系

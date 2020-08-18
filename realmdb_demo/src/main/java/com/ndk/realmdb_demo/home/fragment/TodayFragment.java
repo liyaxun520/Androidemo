@@ -5,15 +5,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
-import com.lvr.timeline.R;
-import com.lvr.timeline.adapter.TimelineAdapter;
-import com.lvr.timeline.anims.LandingAnimator;
-import com.lvr.timeline.anims.ScaleInAnimationAdapter;
-import com.lvr.timeline.app.AppApplication;
-import com.lvr.timeline.base.BaseFragment;
-import com.lvr.timeline.bean.TimeInfo;
-import com.lvr.timeline.home.ui.EditActivity;
-import com.lvr.timeline.utils.RealmOperationHelper;
+
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.adapter.TimelineAdapter;
+import com.ndk.realmdb_demo.anims.LandingAnimator;
+import com.ndk.realmdb_demo.anims.ScaleInAnimationAdapter;
+import com.ndk.realmdb_demo.app.AppApplication;
+import com.ndk.realmdb_demo.base.BaseFragment;
+import com.ndk.realmdb_demo.bean.TimeInfo;
+import com.ndk.realmdb_demo.home.ui.EditActivity;
+import com.ndk.realmdb_demo.utils.RealmOperationHelper;
 
 import java.util.ArrayList;
 import java.util.List;

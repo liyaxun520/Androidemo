@@ -1,7 +1,8 @@
 package com.ndk.realmdb_demo.app;
 
 
-import com.lvr.timeline.base.BaseApplication;
+
+import com.ndk.realmdb_demo.base.BaseApplication;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;

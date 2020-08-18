@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "E:\\2019year_data\\practiceDemo\\Androidemo",
+      "sdkFolder": "D:\\sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\build\\intermediates",
+      "gradleModulePathName": ":audio_demo",
+      "moduleRootFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo",
+      "makeFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\.cxx",
+      "cxxFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx",
+      "ndkFolder": "D:\\NdkPath\\android-ndk-r16b-windows-x86_64\\android-ndk-r16b",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_TOOLCHAIN\u003dclang"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 15,
+  "cxxBuildFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a",
+  "jsonFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a",
+  "objFolder": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a",
+  "buildCommandFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\CMakeLists.txt",
+    "toolchainWrapperFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\build_generation_state.json",
+    "cacheKeyFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "E:\\2019year_data\\practiceDemo\\Androidemo\\audio_demo\\.cxx\\cmake\\debug\\armeabi-v7a\\compile_commands.json"
+}

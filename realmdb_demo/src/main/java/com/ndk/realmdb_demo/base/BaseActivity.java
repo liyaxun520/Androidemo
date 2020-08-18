@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 
-import com.lvr.timeline.R;
-import com.lvr.timeline.app.AppManager;
-import com.lvr.timeline.utils.StatusBarSetting;
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.app.AppManager;
+import com.ndk.realmdb_demo.utils.StatusBarSetting;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+
 
 /**
  * 基类

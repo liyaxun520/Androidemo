@@ -16,13 +16,13 @@ import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.lvr.timeline.R;
-import com.lvr.timeline.app.AppApplication;
-import com.lvr.timeline.base.BaseActivity;
-import com.lvr.timeline.home.fragment.CountDownFragment;
-import com.lvr.timeline.home.fragment.TodayFragment;
-import com.lvr.timeline.home.fragment.YesterdayFragment;
-import com.lvr.timeline.utils.StatusBarSetting;
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.app.AppApplication;
+import com.ndk.realmdb_demo.base.BaseActivity;
+import com.ndk.realmdb_demo.home.fragment.CountDownFragment;
+import com.ndk.realmdb_demo.home.fragment.TodayFragment;
+import com.ndk.realmdb_demo.home.fragment.YesterdayFragment;
+import com.ndk.realmdb_demo.utils.StatusBarSetting;
 
 import java.util.List;
 
@@ -77,7 +77,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         mRbYesterday.setOnClickListener(this);
         mRbTime.setOnClickListener(this);
         mRbToday.setChecked(true);
-        mRbToday.setTextColor(getResources().getColor(R.color.tab_selecet));
+        mRbToday.setTextColor(getResources().getColor(R.color.colorPrimary));
     }
 
     @Override

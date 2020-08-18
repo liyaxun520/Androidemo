@@ -1,7 +1,8 @@
 package com.ndk.realmdb_demo.home.fragment;
 
-import com.lvr.timeline.R;
-import com.lvr.timeline.base.BaseFragment;
+
+import com.ndk.realmdb_demo.R;
+import com.ndk.realmdb_demo.base.BaseFragment;
 
 /**
  * Created by lvr on 2017/4/8.

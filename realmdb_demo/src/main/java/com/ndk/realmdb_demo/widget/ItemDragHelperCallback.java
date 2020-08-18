@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  */
-package com.lvr.timeline.widget;
+package com.ndk.realmdb_demo.widget;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;

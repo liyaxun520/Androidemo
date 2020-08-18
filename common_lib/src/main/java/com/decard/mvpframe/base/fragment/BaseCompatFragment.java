@@ -42,12 +42,7 @@ public abstract class BaseCompatFragment extends SupportFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable
             Bundle savedInstanceState) {
-//        if (getLayoutView() != null) {
-//            return getLayoutView();
-//        } else {
-            //            return inflater.inflate(getLayoutId(), null);
-            return inflater.inflate(getLayoutId(), container, false);
-//        }
+        return inflater.inflate(getLayoutId(), container, false);
     }
 
     @Override
