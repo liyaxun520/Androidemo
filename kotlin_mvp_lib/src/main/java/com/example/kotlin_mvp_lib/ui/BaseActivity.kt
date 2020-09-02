@@ -8,7 +8,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
-import com.example.kotlin_mvp_lib.GlobalApplication
+import com.example.kotlin_mvp_lib.MyApplication
 import com.example.kotlin_mvp_lib.widget.MultipleStatusView
 import io.reactivex.annotations.NonNull
 import pub.devrel.easypermissions.AppSettingsDialog
@@ -86,7 +86,7 @@ abstract class BaseActivity : AppCompatActivity(),EasyPermissions.PermissionCall
 
     override fun onDestroy() {
         super.onDestroy()
-        GlobalApplication.getRefWatcher(this)?.watch(this)
+        MyApplication.getRefWatcher(this)?.watch(this)
     }
 
 

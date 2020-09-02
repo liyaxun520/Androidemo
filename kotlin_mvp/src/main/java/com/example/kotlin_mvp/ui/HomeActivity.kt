@@ -1,12 +1,10 @@
 package com.example.kotlin_mvp.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.KeyEvent
-import android.widget.Toast
 import com.example.kotlin_mvp.Constants
 import com.example.kotlin_mvp.R
-import com.example.kotlin_mvp.listener.KeyDownListener
+import com.example.kotlin_mvp_lib.listener.KeyDownListener
 import com.example.kotlin_mvp.model.bean.CategoryBean
 import com.example.kotlin_mvp_lib.ui.BaseActivity
 import com.example.kotlin_mvp_lib.ui.BaseFragment

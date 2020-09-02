@@ -19,7 +19,7 @@ import kotlin.properties.Delegates
  *
  */
 
-open class GlobalApplication : Application(){
+open class MyApplication : Application(){
 
     private var refWatcher: RefWatcher? = null
 
@@ -31,7 +31,7 @@ open class GlobalApplication : Application(){
             private set
 
         fun getRefWatcher(context: Context): RefWatcher? {
-            val myApplication = context.applicationContext as GlobalApplication
+            val myApplication = context.applicationContext as MyApplication
             return myApplication.refWatcher
         }
 
@@ -64,7 +64,7 @@ open class GlobalApplication : Application(){
                 .showThreadInfo(false)  // 隐藏线程信息 默认：显示
                 .methodCount(0)         // 决定打印多少行（每一行代表一个方法）默认：2
                 .methodOffset(7)        // (Optional) Hides internal method calls up to offset. Default 5
-                .tag("hao_zz")   // (Optional) Global tag for every log. Default PRETTY_LOGGER
+                .tag("LISON_TAG")   // (Optional) Global tag for every log. Default PRETTY_LOGGER
                 .build()
         Logger.addLogAdapter(object : AndroidLogAdapter(formatStrategy) {
             override fun isLoggable(priority: Int, tag: String?): Boolean {

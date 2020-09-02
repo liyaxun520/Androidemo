@@ -9,8 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.kotlin_mvp.listener.KeyDownListener
-import com.example.kotlin_mvp_lib.GlobalApplication
+import com.example.kotlin_mvp_lib.MyApplication
+import com.example.kotlin_mvp_lib.listener.KeyDownListener
 import com.example.kotlin_mvp_lib.widget.MultipleStatusView
 import io.reactivex.annotations.NonNull
 import pub.devrel.easypermissions.AppSettingsDialog
@@ -22,7 +22,7 @@ import pub.devrel.easypermissions.EasyPermissions
  */
 
  abstract class BaseFragment: Fragment(),EasyPermissions.PermissionCallbacks,
-            KeyDownListener{
+        KeyDownListener {
 
     /**
      * 视图是否加载完毕
@@ -89,7 +89,7 @@ import pub.devrel.easypermissions.EasyPermissions
 
     override fun onDestroy() {
         super.onDestroy()
-        activity?.let { GlobalApplication.getRefWatcher(it)?.watch(activity) }
+        activity?.let { MyApplication.getRefWatcher(it)?.watch(activity) }
     }
 
 

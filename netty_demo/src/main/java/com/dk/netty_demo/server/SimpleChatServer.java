@@ -84,19 +84,19 @@ public class SimpleChatServer {
             }
             channels.remove(ctx.channel());
         }
-        @Override
-        protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception { // (4)
-            System.out.println("========channelRead0======="+s);
-            Channel incoming = ctx.channel();
-            for (Channel channel : channels) {
-                if (channel != incoming){
-                    channel.writeAndFlush("[" + incoming.remoteAddress() + "]" + s + "\n");
-                } else {
-                    channel.writeAndFlush("[you]" + s + "\n");
-                }
-            }
-
-        }
+//        @Override
+//        protected void channelRead0(ChannelHandlerContext ctx, String s) throws Exception { // (4)
+//            System.out.println("========channelRead0======="+s);
+//            Channel incoming = ctx.channel();
+//            for (Channel channel : channels) {
+//                if (channel != incoming){
+//                    channel.writeAndFlush("[" + incoming.remoteAddress() + "]" + s + "\n");
+//                } else {
+//                    channel.writeAndFlush("[you]" + s + "\n");
+//                }
+//            }
+//
+//        }
 
         @Override
         public void channelActive(ChannelHandlerContext ctx) throws Exception { // (5)
@@ -119,6 +119,19 @@ public class SimpleChatServer {
             // 当出现异常就关闭连接
             cause.printStackTrace();
             ctx.close();
+        }
+
+        @Override
+        protected void messageReceived(ChannelHandlerContext ctx, String msg) throws Exception {
+            System.out.println("========channelRead0======="+msg);
+            Channel incoming = ctx.channel();
+            for (Channel channel : channels) {
+                if (channel != incoming){
+                    channel.writeAndFlush("[" + incoming.remoteAddress() + "]" + msg + "\n");
+                } else {
+                    channel.writeAndFlush("[you]" + msg + "\n");
+                }
+            }
         }
     }
 

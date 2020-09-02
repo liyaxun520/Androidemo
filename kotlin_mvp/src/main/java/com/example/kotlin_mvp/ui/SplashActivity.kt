@@ -2,7 +2,7 @@ package com.example.kotlin_mvp.ui
 
 import android.Manifest
 import android.graphics.Typeface
-import com.example.kotlin_mvp_lib.GlobalApplication
+import com.example.kotlin_mvp_lib.MyApplication
 import com.example.kotlin_mvp_lib.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
@@ -22,8 +22,8 @@ class SplashActivity : BaseActivity() {
     private val TAG :String = SplashActivity::class.java.simpleName
     init {
         Logger.d("SplashActivity{   }  init")
-        titleTypeFace = Typeface.createFromAsset(GlobalApplication.context.assets,"fonts/Lobster-1.4.otf")
-        textTypeFace = Typeface.createFromAsset(GlobalApplication.context.assets,"fonts/FZLanTingHeiS-L-GB-Regular.TTF")
+        titleTypeFace = Typeface.createFromAsset(MyApplication.context.assets,"fonts/Lobster-1.4.otf")
+        textTypeFace = Typeface.createFromAsset(MyApplication.context.assets,"fonts/FZLanTingHeiS-L-GB-Regular.TTF")
     }
 
     override fun initData() {
@@ -31,8 +31,8 @@ class SplashActivity : BaseActivity() {
     }
 
     override fun initView() {
-        titleTypeFace = Typeface.createFromAsset(GlobalApplication.context.assets,"fonts/Lobster-1.4.otf")
-        textTypeFace = Typeface.createFromAsset(GlobalApplication.context.assets,"fonts/FZLanTingHeiS-L-GB-Regular.TTF")
+        titleTypeFace = Typeface.createFromAsset(MyApplication.context.assets,"fonts/Lobster-1.4.otf")
+        textTypeFace = Typeface.createFromAsset(MyApplication.context.assets,"fonts/FZLanTingHeiS-L-GB-Regular.TTF")
         tv_title.typeface = titleTypeFace
         tv_text.typeface = textTypeFace
 

@@ -52,13 +52,6 @@ abstract class CommonAdapter<T>(var mContext: Context, var mData: ArrayList<T>, 
         //绑定数据
         bindData(holder, mData[position], position)
 
-//        if (mItemClickListener != null) {
-//            holder.itemView.setOnClickListener { mItemClickListener!!.onItemClick(mData[position], position) }
-//        }
-//        //长按点击事件
-//        if (mItemLongClickListener != null) {
-//            holder.itemView.setOnLongClickListener { mItemLongClickListener!!.onItemLongClick(mData[position], position) }
-//        }
         //条目点击事件
         mItemClickListener?.let {
             holder.itemView.setOnClickListener { mItemClickListener!!.onItemClick(mData[position], position) }

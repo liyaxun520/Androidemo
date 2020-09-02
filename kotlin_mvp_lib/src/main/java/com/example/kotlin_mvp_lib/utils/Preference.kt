@@ -3,7 +3,7 @@ package com.example.kotlin_mvp_lib.utils
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.kotlin_mvp_lib.GlobalApplication
+import com.example.kotlin_mvp_lib.MyApplication
 import java.io.*
 import kotlin.reflect.KProperty
 
@@ -18,7 +18,7 @@ class Preference<T>(val name:String, private val default:T) {
         private const val file_name = "kotlin_mvp_file"
 
         private val prefs: SharedPreferences by lazy {
-            GlobalApplication.context.getSharedPreferences(file_name, Context.MODE_PRIVATE)
+            MyApplication.context.getSharedPreferences(file_name, Context.MODE_PRIVATE)
         }
         /**
          * 删除全部数据

@@ -13,7 +13,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.kotlin_mvp.R
 import com.example.kotlin_mvp.model.bean.CategoryBean
 import com.example.kotlin_mvp.ui.HomeActivity
-import com.example.kotlin_mvp_lib.GlobalApplication
+import com.example.kotlin_mvp_lib.MyApplication
 import com.example.kotlin_mvp_lib.widget.recyclerview.ViewHolder
 import com.example.kotlin_mvp_lib.widget.recyclerview.adapter.CommonAdapter
 
@@ -24,7 +24,7 @@ class ListAdapter (mContext: Context, categoryList: ArrayList<CategoryBean>, lay
     private var textTypeface: Typeface?=null
 
     init {
-        textTypeface = Typeface.createFromAsset(GlobalApplication.context.assets, "fonts/FZLanTingHeiS-DB1-GB-Regular.TTF")
+        textTypeface = Typeface.createFromAsset(MyApplication.context.assets, "fonts/FZLanTingHeiS-DB1-GB-Regular.TTF")
     }
 
     /**
