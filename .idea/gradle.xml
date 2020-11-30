@@ -23,13 +23,15 @@
             <option value="$PROJECT_DIR$/f_a_msg" />
             <option value="$PROJECT_DIR$/ftp_client" />
             <option value="$PROJECT_DIR$/http-net" />
+            <option value="$PROJECT_DIR$/huaweisdcard" />
             <option value="$PROJECT_DIR$/kotlin_demo" />
             <option value="$PROJECT_DIR$/kotlin_mvp" />
             <option value="$PROJECT_DIR$/kotlin_mvp_lib" />
             <option value="$PROJECT_DIR$/kotlin_mvvm_demo" />
             <option value="$PROJECT_DIR$/lottie_demo" />
             <option value="$PROJECT_DIR$/material_spinner" />
-            <option value="$PROJECT_DIR$/ndkdemo" />
+            <option value="$PROJECT_DIR$/module_tensorflow" />
+            <option value="$PROJECT_DIR$/mqtt_demo" />
             <option value="$PROJECT_DIR$/net_detech" />
             <option value="$PROJECT_DIR$/netty_demo" />
             <option value="$PROJECT_DIR$/observer_pattern" />
@@ -61,6 +63,7 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

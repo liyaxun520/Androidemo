@@ -21,4 +21,21 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.example.f_a_msg", appContext.packageName)
     }
+
+    @Test
+    fun testPrint(): Unit {
+        println("lison is here")
+        Greeter("lison").greet()
+
+    }
+    class Greeter(var name:String){
+        fun greet(): Unit {
+            println("hello $name")
+        }
+    }
+
+    @Test
+    fun testNetReq(): Unit {
+
+    }
 }

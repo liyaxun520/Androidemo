@@ -134,9 +134,11 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                boolean connect = ftpManager.connect("58.250.161.25",6000);
+//                boolean connect = ftpManager.connect("58.250.161.25",6000);
+                boolean connect = ftpManager.connect("47.105.35.37",21);
                 if (connect) {
-                    boolean login = ftpManager.login("ftpcq", "123456");
+//                    boolean login = ftpManager.login("ftpcq", "123456");
+                    boolean login = ftpManager.login("kjzf", "decard@123!");
                     if (login) {
                         boolean b = ftpManager.changeDirectory("temp");
                         Log.d(TAG, "run: "+b);
@@ -149,12 +151,22 @@ public class MainActivity extends AppCompatActivity {
 
                     }else{
                         Log.d(TAG,"ftp登录失败");
+                        showToast("ftp登录失败");
                     }
                 }else{
                     Log.d(TAG,"ftp未连接");
+                    showToast("ftp未连接");
                 }
             }
         }).start();
 
+    }
+    private void showToast(final String msg){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, ""+msg, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

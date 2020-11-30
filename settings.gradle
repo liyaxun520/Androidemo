@@ -1,5 +1,8 @@
+include ':mqtt_demo'
+include ':module_tensorflow'
+include ':huaweisdcard'
 include ':bottomsheetdialog'
-include ':ndkdemo',':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinner',
+include ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinner',
         ':lottie_demo', ':pie_demo', ':common_lib', ':voice_image', ':usb_camera', ':usb_libs',
         ':ftp_client', ':wifidirect', ':rxdemo', ':screenmatchdemo', ':recvsmooth', ':kotlin_demo',
         ':aop', ':roomdemo', ':netty_demo', ':crash_restart', ':threadlocal', ':strategy_pattern',

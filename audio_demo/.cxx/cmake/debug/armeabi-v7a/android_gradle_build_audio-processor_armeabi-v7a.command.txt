@@ -1,8 +1,0 @@
-Executable : D:\sdk\cmake\3.6.4111459\bin\cmake.exe
-arguments : 
---build
-E:\2019year_data\practiceDemo\Androidemo\audio_demo\.cxx\cmake\debug\armeabi-v7a
---target
-audio-processor
-jvmArgs : 
-
