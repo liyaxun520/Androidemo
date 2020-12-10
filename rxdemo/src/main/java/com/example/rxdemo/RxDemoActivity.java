@@ -1,5 +1,6 @@
 package com.example.rxdemo;
 
+import android.Manifest;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -9,9 +10,14 @@ import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatButton;
+import android.view.View;
 import android.widget.ImageView;
 
+import com.decard.mvpframe.utils.ToastUtils;
+import com.jakewharton.rxbinding2.view.RxView;
 import com.orhanobut.logger.Logger;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +40,8 @@ public class RxDemoActivity extends AppCompatActivity {
 
     private Disposable disposable;
     private ImageView iv;
+    private RxPermissions rxPermissions;
+    private AppCompatButton btnRxView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +55,9 @@ public class RxDemoActivity extends AppCompatActivity {
 
 //        getBitmapByAddress();
         //Flowable 用于订阅 Subscriber ， 是支持背压（Backpressure）的
-        flatMapDemo();
+//        flatMapDemo();
+        rxPermissions = new RxPermissions(this);
+        btnRxView = findViewById(R.id.btnRxView);
     }
 
     private void flatMapDemo() {
@@ -90,7 +100,6 @@ public class RxDemoActivity extends AppCompatActivity {
                                 }
                             };
                         }
-
                         return null;
                     }
                 }).observeOn(AndroidSchedulers.mainThread())
@@ -297,6 +306,22 @@ public class RxDemoActivity extends AppCompatActivity {
         if (disposable != null) {
             disposable.dispose();
         }
+    }
+
+    public void testRxView(View view) {
+        RxView.clicks(btnRxView)
+                .compose(rxPermissions.ensure(Manifest.permission.WRITE_EXTERNAL_STORAGE))
+                .subscribe(new Consumer<Boolean>() {
+                    @Override
+                    public void accept(Boolean aBoolean) throws Exception {
+                        if (aBoolean) {
+                            ToastUtils.showToast("授权成功");
+                        }else{
+                            ToastUtils.showToast("授权失败");
+
+                        }
+                    }
+                });
     }
 }
 
