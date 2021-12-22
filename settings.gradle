@@ -12,3 +12,4 @@ include ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinn
         ':picasso', ':download_demo', ':retrofit_lib', ':xlsparse_demo', ':ormlite', ':view_demo',
         ':realmdb_demo'
 
+include ':iterator_demo'

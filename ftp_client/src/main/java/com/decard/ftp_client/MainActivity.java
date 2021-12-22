@@ -142,9 +142,90 @@ public class MainActivity extends AppCompatActivity {
                     if (login) {
                         boolean b = ftpManager.changeDirectory("temp");
                         Log.d(TAG, "run: "+b);
-                        boolean upload = ftpManager.upload(new File(path +"tft.db"), 0, listener);
-                        if (upload) {
+                        boolean upload = ftpManager.upload(new File(path + "tft.db"), 0, new FTPDataTransferListener() {
+                            @Override
+                            public void started() {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        progressBar.setVisibility(View.VISIBLE);
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void transferred(int i) {
+
+                            }
+
+                            @Override
+                            public void completed() {
+
+                            }
+
+                            @Override
+                            public void aborted() {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(MainActivity.this, "上传失败", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void failed() {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(MainActivity.this, "上传失败", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                });
+                            }
+                        });
+                        boolean upload1 = ftpManager.upload(new File(path + "para.db"), 0, new FTPDataTransferListener() {
+                            @Override
+                            public void started() {
+
+                            }
+
+                            @Override
+                            public void transferred(int i) {
+
+                            }
+
+                            @Override
+                            public void completed() {
+
+                            }
+
+                            @Override
+                            public void aborted() {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(MainActivity.this, "上传失败", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void failed() {
+                                runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(MainActivity.this, "上传失败", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                });
+                            }
+                        });
+                        if (upload && upload1) {
                             Log.d(TAG,"文件上传完成");
+                            showToast("文件上传完成");
                         }else{
                             Log.e(TAG,"文件上传失败");
                         }
@@ -165,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                progressBar.setVisibility(View.GONE);
                 Toast.makeText(MainActivity.this, ""+msg, Toast.LENGTH_SHORT).show();
             }
         });
