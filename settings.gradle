@@ -1,15 +1,17 @@
-include ':mqtt_demo'
-include ':module_tensorflow'
-include ':huaweisdcard'
-include ':bottomsheetdialog'
-include ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinner',
-        ':lottie_demo', ':pie_demo', ':common_lib', ':voice_image', ':usb_camera', ':usb_libs',
-        ':ftp_client', ':wifidirect', ':rxdemo', ':screenmatchdemo', ':recvsmooth', ':kotlin_demo',
-        ':aop', ':roomdemo', ':netty_demo', ':crash_restart', ':threadlocal', ':strategy_pattern',
-        ':observer_pattern', ':decoration_pattern', ':build_pattern', ':bugly_demo',
-        ':recycler_layoutmanager', ':reflect_demo', ':opengl_demo', ':net_detech', ':kotlin_mvvm_demo',
-        ':f_a_msg', ':vertical_view', ':kotlin_mvp', ':kotlin_mvp_lib', ':audio_demo', ':utils_demo',
-        ':picasso', ':download_demo', ':retrofit_lib', ':xlsparse_demo', ':ormlite', ':view_demo',
-        ':realmdb_demo'
-
-include ':iterator_demo'
+//include ':mqtt_demo'
+//include ':module_tensorflow'
+//include ':huaweisdcard'
+//include ':bottomsheetdialog'
+//include ':socketdemo', ':http-net', ':x2cdemo', ':singlecheck', ':material_spinner',
+//        ':lottie_demo', ':pie_demo', ':common_lib', ':voice_image', ':usb_camera', ':usb_libs',
+//        ':ftp_client', ':wifidirect', ':rxdemo', ':screenmatchdemo', ':recvsmooth', ':kotlin_demo',
+//        ':aop', ':roomdemo', ':netty_demo', ':crash_restart', ':threadlocal', ':strategy_pattern',
+//        ':observer_pattern', ':decoration_pattern', ':build_pattern', ':bugly_demo',
+//        ':recycler_layoutmanager', ':reflect_demo', ':opengl_demo', ':net_detech', ':kotlin_mvvm_demo',
+//        ':f_a_msg', ':vertical_view', ':kotlin_mvp', ':kotlin_mvp_lib', ':audio_demo', ':utils_demo',
+//        ':picasso', ':download_demo', ':retrofit_lib', ':xlsparse_demo', ':ormlite', ':view_demo',
+//        ':realmdb_demo'
+//
+//include ':iterator_demo'
+include ':hiltdagger_demo'
+include ':datastore'
